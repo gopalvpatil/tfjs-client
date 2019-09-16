@@ -13,7 +13,7 @@ function predict() {
 
 async function run() {
 
-    recognizer = speechCommands.create('BROWSER_FFT', null, 'http://localhost:1234/assets/model/model.json', 'http://localhost:1234/assets/model/metadata.json');
+    recognizer = speechCommands.create('BROWSER_FFT', null, 'http://localhost:4044/assets/model/custom-model.json', 'http://localhost:4044/assets/model/custom-metadata.json');
     await recognizer.ensureModelLoaded();
     console.debug(recognizer.wordLabels());
     predict();
